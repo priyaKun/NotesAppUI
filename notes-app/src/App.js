@@ -1,7 +1,7 @@
 import './App.css';
 import NoteList from './components/NoteList';
 // import { NoteProvider } from './context/NoteContext';
-
+// App.js
 function App() {
   return (
     <div className="App">
