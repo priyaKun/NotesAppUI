@@ -1,0 +1,61 @@
+/* Make entire page take full height and remove margins */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Ensure the .App fills the whole screen */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header stays fixed height */
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Main content fills the rest of the screen */
+main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Optional: Link styling */
+.App-link {
+  color: #61dafb;
+}
+
+/* Optional: Logo animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
