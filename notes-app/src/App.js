@@ -1,8 +1,6 @@
 import './App.css';
 import NoteList from './components/NoteList';
 // import { NoteProvider } from './context/NoteContext';
-// App.js
-//app.js by Munaf
 function App() {
   return (
     <div className="App">
